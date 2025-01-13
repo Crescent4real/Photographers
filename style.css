@@ -6,8 +6,10 @@
 }
 
 nav{
-    background: #1b1b1b;
+    position: fixed;
     width: 100%;
+    padding: 10px 0;
+    z-index: 12;
     padding: 10px 0;
 }
 
@@ -49,4 +51,21 @@ nav .menu{
 .menu ul li a :hover{
     background: #fff;
     color: #000;
+}
+
+.img{
+    background: url(img/back.jpg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.img::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
 }
